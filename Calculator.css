@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Montserrat:wght@300&family=Poppins:wght@200;300;400&family=REM:wght@200&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;}
+
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background : linear-gradient(80deg, #0a0a0a, rgb(63, 46, 103));
+ }   
+
+ .num{
+  padding: 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background: transparent ;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255 , 0.1);
+  color:white;
+  cursor: pointer;
+}
+
+
+.op{
+     padding: 10px;
+     margin: 2px;
+     border: none;
+     width: 40px;
+     height: 40px;
+     background: transparent ;
+     box-shadow: -8px -8px 15px rgba(255, 255, 255 , 0.1);
+     color:white;
+     background-color: rgb(213, 89, 44);
+     cursor: pointer;
+
+}
+
+.num:hover{
+border: 1px solid grey;
+}
+.op:hover{
+border: 1px solid rgb(215, 212, 212);
+}
+.ans{
+    margin: 10px;
+    padding: 10px;
+    width: 82%;   
+    border: none;
+    text-align: right;
+    background: transparent;
+    box-shadow: 1px 3px 10px grey;
+    cursor: pointer;
+    color: white;
+}
+
+#reset{
+    width: 43%;
+    background-color: rgb(23, 134, 79);
+}
+#equals{
+    background-color: rgb(23, 134, 79);
+}
+#del{
+    background-color: rgb(23, 134, 79);
+}
+.ans::placeholder{
+    color: white;
+}
+
+.container{
+    border: 1px solid rgb(81, 78, 78);
+    padding: 7px;
+    margin-top: 30px;
+    margin-left: 90px;
+
+    background: transparent;
+    box-shadow: 0px 3px 15px  grey;
+
+}
+
+/* Your existing styles */
+
+@media only screen and (max-width: 600px) {
+ 
+    .container {
+        margin-top: 50px;
+        margin-left: 20px;       
+        padding: 5px;
+        width: 155px;
+    }
+
+    .num, .op {
+        width: 30px; /* Adjust button width for smaller screens */
+        height: 30px; /* Adjust button height for smaller screens */
+        font-size: 10px; /* Adjust font size for smaller screens */
+        text-align: center; 
+    }
+
+    #reset {
+        width: 44%; /* Adjust specific button width for smaller screens */
+    }
+    
+        .ans{
+            margin: 8px;
+            padding: 8px;
+            width: 79%;   
+            border: none;
+            text-align: right;
+            background: transparent;
+            box-shadow: 1px 3px 10px grey;
+            cursor: pointer;
+            color: white;
+        }
+        
+    
+    
+}
+
+@media only screen and (max-width: 195px) {
+ 
+    .container {
+        margin-top: 50px;
+        margin-left: 10px;       
+        padding: 2px;
+        width: 155px;
+    }
+
+    .num, .op {
+        width: 15px; /* Adjust button width for smaller screens */
+        height: 15px; /* Adjust button height for smaller screens */
+        font-size: 6px; /* Adjust font size for smaller screens */
+        text-align: center; 
+    }
+
+    #reset {
+        width: 40%; /* Adjust specific button width for smaller screens */
+    }
+    
+        .ans{
+            margin: 5px;
+            padding: 5px;
+            width: 82%;   
+            border: none;
+            text-align: right;
+            background: transparent;
+            box-shadow: 1px 2px 7px grey;
+            cursor: pointer;
+            color: white;
+        }
+        
+    
+    
+}
